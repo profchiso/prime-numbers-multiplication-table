@@ -17,7 +17,8 @@ function generateNPrimeNumbers(length) {
 
 function displayPrimeNumbersMultiplicationTable() {
     let length = document.querySelector(".prime-number-length").value;
-    if (typeof length !== "number") {
+
+    if (Number(length) == "NaN") {
         alert("Length of prime number must be a number");
         return;
     }
